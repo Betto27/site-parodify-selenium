@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-06T17:05:04.630143" rpa="false" schemaversion="5">
+<suite id="s1" name="Cenarios" source="C:\robot\site-parodify-selenium\cenarios">
+<suite id="s1-s1" name="Testes" source="C:\robot\site-parodify-selenium\cenarios\testes.robot">
+<test id="s1-s1-t1" name="Validar o titulo do site" line="11">
+<kw name="Abrir o navegador do projeto" owner="Base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:05.703366" level="INFO">Opening browser 'chrome' to base url 'https://parodify.vercel.app/'.</msg>
+<arg>https://parodify.vercel.app/</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T17:05:05.702334" elapsed="1.908308"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:05.702334" elapsed="1.908849"/>
+</kw>
+<kw name="Given que abro o navegador" owner="Script">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2024-05-06T17:05:07.612699" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:07.611689" elapsed="0.001010"/>
+</kw>
+<kw name="When acesso o site" owner="Script">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:07.933127" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-140.png"&gt;&lt;img src="selenium-screenshot-140.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-06T17:05:07.613756" elapsed="0.319371"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:07.613756" elapsed="0.319371"/>
+</kw>
+<kw name="Then no tituto da pagina é apresentado" owner="Script">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:07.940226" level="INFO">Page title is 'Parodify by Papito'.</msg>
+<arg>${argumento}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-05-06T17:05:07.934125" elapsed="0.006101"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:08.054418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-2.png"&gt;&lt;img src="selenium-element-screenshot-2.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath=//*[@id="root"]/div[1]/aside/a[1]/img</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-05-06T17:05:07.940226" elapsed="0.114192"/>
+</kw>
+<arg>Parodify by Papito</arg>
+<status status="PASS" start="2024-05-06T17:05:07.934125" elapsed="0.121288"/>
+</kw>
+<kw name="Fechar o navegador" owner="Base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:08.170443" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-141.png"&gt;&lt;img src="selenium-screenshot-141.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-06T17:05:08.056414" elapsed="0.114029"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-06T17:05:08.170443" elapsed="6.231651"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:08.055413" elapsed="6.346681"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:05.699203" elapsed="8.703558"/>
+</test>
+<test id="s1-s1-t2" name="Tocar musica ao clicar no botão play" line="17">
+<kw name="Abrir o navegador do projeto" owner="Base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:14.440707" level="INFO">Opening browser 'chrome' to base url 'https://parodify.vercel.app/'.</msg>
+<arg>https://parodify.vercel.app/</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T17:05:14.439600" elapsed="1.681805"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:14.439600" elapsed="1.681876"/>
+</kw>
+<kw name="Given que acesso o site" owner="Script">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2024-05-06T17:05:16.122476" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:16.121476" elapsed="0.001000"/>
+</kw>
+<kw name="When clico no botão play" owner="Script">
+<kw name="Elemento play visivel" owner="Base">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"play")]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T17:05:16.123503" elapsed="0.446651"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:16.123503" elapsed="0.446651"/>
+</kw>
+<kw name="Play music" owner="Base">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:16.571156" level="INFO">Clicking button 'xpath=//div[contains(@class, "song")]//h6[text()="Bug Suede Shoes"]/..//button[contains(@class,"play")]'.</msg>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"play")]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T17:05:16.571156" elapsed="0.102249"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:16.571156" elapsed="0.102249"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:16.925628" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-142.png"&gt;&lt;img src="selenium-screenshot-142.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-06T17:05:16.673405" elapsed="0.252223"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:16.122476" elapsed="0.803152"/>
+</kw>
+<kw name="Then a musica é iniciada" owner="Script">
+<kw name="Elemento pause visivel" owner="Base">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"pause")]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T17:05:16.926619" elapsed="0.450342"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:16.926619" elapsed="0.450342"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-06T17:05:19.377895" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-06T17:05:17.376961" elapsed="2.000934"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:16.926619" elapsed="2.451276"/>
+</kw>
+<kw name="Fechar o navegador" owner="Base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:19.623270" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-143.png"&gt;&lt;img src="selenium-screenshot-143.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-06T17:05:19.378896" elapsed="0.244374"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-06T17:05:19.623766" elapsed="6.170573"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:19.377895" elapsed="6.416444"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:14.436560" elapsed="11.358915"/>
+</test>
+<test id="s1-s1-t3" name="Pausar musica ao clicar no botão pause" line="22">
+<kw name="Abrir o navegador do projeto" owner="Base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:25.830126" level="INFO">Opening browser 'chrome' to base url 'https://parodify.vercel.app/'.</msg>
+<arg>https://parodify.vercel.app/</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T17:05:25.830126" elapsed="1.827354"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:25.830126" elapsed="1.827354"/>
+</kw>
+<kw name="Given que acesso o site" owner="Script">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2024-05-06T17:05:27.658479" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:27.657480" elapsed="0.000999"/>
+</kw>
+<kw name="And a musica esteja tocando" owner="Script">
+<kw name="Elemento play visivel" owner="Base">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"play")]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T17:05:27.659478" elapsed="0.441998"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:27.659478" elapsed="0.441998"/>
+</kw>
+<kw name="Play music" owner="Base">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:28.102474" level="INFO">Clicking button 'xpath=//div[contains(@class, "song")]//h6[text()="Bug Suede Shoes"]/..//button[contains(@class,"play")]'.</msg>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"play")]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T17:05:28.102474" elapsed="0.082075"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:28.101476" elapsed="0.083073"/>
+</kw>
+<kw name="Elemento pause visivel" owner="Base">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"pause")]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T17:05:28.185549" elapsed="0.441696"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:28.184549" elapsed="0.442696"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:28.873938" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-144.png"&gt;&lt;img src="selenium-screenshot-144.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-06T17:05:28.627245" elapsed="0.246693"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:27.658479" elapsed="1.215459"/>
+</kw>
+<kw name="When clico no botão pause" owner="Script">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"pause")]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T17:05:28.874939" elapsed="0.017814"/>
+</kw>
+<kw name="Pause music" owner="Base">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-06T17:05:28.892753" level="INFO">Clicking button 'xpath=//div[contains(@class, "song")]//h6[text()="Bug Suede Shoes"]/..//button[contains(@class,"pause")]'.</msg>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${Validar}"]/..//button[contains(@class,"pause")]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T17:05:28.892753" elapsed="0.055802"/>
+</kw>
+<status status="PASS" start="2024-05-06T17:05:28.892753" elapsed="0.056805"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<errors>
+<msg time="2024-05-06T17:05:31.139210" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
